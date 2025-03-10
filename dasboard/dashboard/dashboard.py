@@ -1,5 +1,7 @@
 import math
 import pandas as pd
+import os
+os.system("pip install matplotlib")
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st

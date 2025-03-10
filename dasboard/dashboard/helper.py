@@ -1,4 +1,6 @@
 import pandas as pd
+import os
+os.system("pip install matplotlib")
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import seaborn as sns
