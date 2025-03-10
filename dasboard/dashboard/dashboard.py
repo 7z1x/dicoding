@@ -29,7 +29,7 @@ max_date = all_df["order_purchase_timestamp"].max()
 # Sidebar
 with st.sidebar:
     st.title("Zulfahmi M. Ardianto")
-    st.image("dashboard/logo.png")
+    st.image("dasboard/dashboard/logo.png")
     start_date, end_date = st.date_input(
         label="Select Date Range",
         value=[min_date, max_date],
