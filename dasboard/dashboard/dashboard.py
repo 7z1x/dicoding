@@ -1,7 +1,5 @@
 import math
 import pandas as pd
-import os
-os.system("pip install matplotlib")
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
@@ -14,12 +12,12 @@ sns.set(style='dark')
 # Dataset
 datetime_cols = ["order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date",
                  "order_estimated_delivery_date", "order_purchase_timestamp", "shipping_limit_date"]
-all_df = pd.read_csv("data/all_data.csv")
+all_df = pd.read_csv("dasboard/data/all_data.csv")
 all_df.sort_values(by="order_purchase_timestamp", inplace=True)
 all_df.reset_index(inplace=True)
 
 # Geolocation Dataset
-geolocation = pd.read_csv('data/geo_data.csv')
+geolocation = pd.read_csv('dasboard/data/geo_data.csv')
 data = geolocation.drop_duplicates(subset='customer_unique_id')
 
 for col in datetime_cols:
